@@ -48,15 +48,18 @@ async function getRandCharacter() {
     } catch (error) {
         console.error('Error fetching character data:', error);
         characterInfo.innerHTML = 'Could not receive character data.';
+        jokeText.textContent = `Joke could not be loaded.`;
     }
 
 }
+
+// Function to get a random dad joke
 async function getDadJoke() {
     try {
         const jokeResponse = await fetch(dadJokeURL, {
             headers: {
-                'Accept': 'application/json',
-                'User-Agent': 'Rick and Morty JS Assignment (https://github.com/George-Baxter/Assignment3JS)'
+                'Accept': 'application/json', 
+                'User-Agent': 'Rick and Morty JS Assignment (https://github.com/George-Baxter/Assignment3JS)' // Adding User-Agent header
             }
         });
         const jokeData = await jokeResponse.json();
@@ -66,7 +69,7 @@ async function getDadJoke() {
         return 'Could not fetch dad joke.';
     }
 }
-
+// Function to get weather data from Barrie
 async function fetchWeather() {
     try {
         const weatherResponse = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=Barrie,ON,CA&appid=${weatherApi}&units=metric`);

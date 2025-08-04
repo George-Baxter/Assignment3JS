@@ -40,3 +40,40 @@ button:hover {
     max-height: 250px;
     border-radius: 10px;
 }
+#jokeBox {
+    margin: 25px auto;
+    padding: 20px;
+    background-color: #1c3a45;
+    border-radius: 8px;
+    max-width: 450px;
+}
+#jokeBox h3 {
+    color: #e8e8e8;
+    margin-top: 0;
+    font-size: 1.1em;
+
+}
+#jokeText {
+    font-style: italic;
+    line-height: 1.5;
+
+}
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #1c3a45;
+    border-radius: 6px;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+footer a:hover {
+    color: #e02727;
+    transition: color 0.2s;
+}
