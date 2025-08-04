@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Assignment 3 JavaScript Rick and Morty API</title>
 </head>
@@ -10,7 +11,15 @@
     <h1>
         Rick and Morty API Assignment 3
     </h1>
-    <script src="js/script.js" defer></script>
+    <p>Get a random character from the Rick and Morty universe</p> 
+    <button id="getCharacter">Get Random Character</button>  <!-- Button to get random character-->
+    <div id="characterCard">
+        <img id="characterImg" src="" alt="Rick and Morty Character Image" /> <!-- Placeholder for character image -->
+        <h2 id="characterName">Character Name</h2>  <!-- Placeholder for character name -->
+        <p id="characterInfo">Character Info</p>  <!-- Placeholder for character info -->
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 <footer>
     <p>
